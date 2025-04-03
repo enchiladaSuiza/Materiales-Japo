@@ -1,0 +1,137 @@
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        ruby {
+            text-align: center;
+        }
+        
+        rt {
+            margin-bottom: 2px;
+            font-size: x-small;
+        }
+        
+        .example-container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .example {
+            text-align: center;
+            font-size: x-large;
+            border-style: none;
+            margin: 0.8em 1.5em;
+            padding: 0.6em;
+            border-radius: 0.8em;
+        }
+
+        .example rt {
+            font-size: small;
+        }
+
+        .example span {
+            margin: auto 0.2em;
+        }
+
+        .topic {
+            text-align: center;
+            font-size: x-large;
+            border-style: none;
+            font-weight: bold;
+            margin: 0.5em 1em;
+        }
+
+        .topic rt {
+            font-size: medium;
+            margin-bottom: 2px;
+        }
+
+        .topic span {
+            font-size: large;
+        }
+    </style>
+
+    <h1>
+        <ruby>色<rt>いろ</rt></ruby>
+        <br>Colores
+    </h1>
+
+    <p>Los colores en el japonés toman dos formas gramáticas: como sustantivos y como adjetivos. En la siguiente página se muestran los nombres de algunos colores comunes, seguidos por su forma adjetival.</p>
+
+    <div class="example-container">
+        <p><ruby>赤<rt>あか</rt></ruby>が好きです。</p>
+        <p>Me gusta el (color) rojo.</p>
+    </div>
+
+    <div class="example-container">
+        <p><ruby>赤<rt>あか</rt></ruby>い<ruby>服<rt>ふく</rt></ruby>が好きです。</p>
+        <p>Me gusta la ropa roja.</p>
+    </div>
+
+    <div class="example-container">
+        <p class="example" style="background-color: red; color: white;">
+            <span><ruby>赤<rt>あか</rt></ruby>／<ruby>赤<rt>あか</rt></ruby>い</span>
+            <span>(Rojo)</span>
+        </p>
+        <p class="example" style="background: linear-gradient(90deg, blue 0%, lime 100%); color:white;">
+            <span><ruby>青<rt>あお</rt></ruby>／<ruby>青<rt>あお</rt></ruby>い</span>
+            <span>(Azul/Verde)</span>
+        </p>
+        <p class="example" style="background-color: lime; color: black">
+            <span><ruby>緑<rt>みどり</rt></ruby>／<ruby>緑色<rt>みどりいろ</rt></ruby>の</span>
+            <span>(Verde)</span>
+        </p>
+        <p class="example" style="background-color: yellow; color: black">
+            <span><ruby>黄色<rt>きいろ</rt></ruby>／<ruby>黄色<rt>きいろ</rt></ruby>い</span>
+            <span>(Amarillo)</span>
+        </p>
+        <p class="example" style="background-color: purple; color: white;">
+            <span><ruby>紫<rt>むらさき</rt></ruby>／<ruby>紫<rt>むらさき</rt></ruby>の</span>
+            <span>(Púrpura)</span>
+        </p>
+        <p class="example" style="background-color: pink; color: black;">
+            <span>ピンク／ピンクの</span>
+            <span>(Rosado)</span>
+        </p>
+        <p class="example" style="background-color: gray; color: white">
+            <span><ruby>灰色<rt>はいいろ</rt></ruby>／<ruby>灰色<rt>はいいろ</rt></ruby>の</span>
+            <span>(Gris)</span>
+        </p>
+        <p class="example" style="background-color: sienna; color: white;">
+            <span><ruby>茶色<rt>ちゃいろ</rt></ruby>／<ruby>茶色<rt>ちゃいろ</rt></ruby>の</span>
+            <span>(Café)</span>
+        </p>
+        <p class="example" style="background-color: orange; color: black">
+            <span>オレンジ<ruby>色<rt>いろ</rt></ruby>／オレンジ<ruby>色<rt>いろ</rt></ruby>の</span>
+            <span>(Naranja)</span>
+        </p>
+        <p class="example" style="background-color: white; border-style: solid; border-width: 2px; color: black">
+            <span><ruby>白<rt>しろ</rt></ruby>／<ruby>白<rt>しろ</rt></ruby>い</span>
+            <span>(Blanco)</span>
+        </p>
+        <p class="example" style="background-color: black; color: white;">
+            <span><ruby>黒<rt>くろ</rt></ruby>／<ruby>黒<rt>くろ</rt></ruby>い</span>
+            <span>(Negro)</span>
+        </p>
+        <p class="example" style="background-color: gold; color: black;">
+            <span><ruby>金色<rt>きんいろ</rt></ruby>／<ruby>金色<rt>きんいろ</rt></ruby>の</span>
+            <span>(Dorado)</span>
+        </p>
+        <p class="example" style="background-color: silver; color: black;">
+            <span><ruby>銀色<rt>ぎんいろ</rt></ruby>／<ruby>銀色<rt>ぎんいろ</rt></ruby>の</span>
+            <span>(Plateado)</span>
+        </p>
+    </div>
+
+    <!-- <hr>
+
+    <div class="example-container">
+        <p class="example">
+
+        </p>
+    </div> -->
+</body>
