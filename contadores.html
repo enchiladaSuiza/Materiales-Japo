@@ -1,0 +1,465 @@
+<body>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        ruby {
+            text-align: center;
+        }
+        
+        rt {
+            /* margin-bottom: 2px; */
+            /* font-size: x-small; */
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            font-size: large;
+        }
+
+        table rt {
+            font-size: small;
+        }
+
+        tbody {
+            width: 100%;
+        }
+        
+        
+        td {
+            border-style: solid;
+            border-width: 2px;
+            padding: 0.8em 0;
+            vertical-align: middle;
+        }
+        
+        .example-container {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .example {
+            text-align: center;
+            font-size: x-large;
+            border-style: none;
+            margin: 0.8em 1.5em;
+        }
+
+        .example rt {
+            font-size: small;
+        }
+
+        .example span {
+            margin-right: 0.6em;
+        }
+
+        .digit {
+            font-weight: bold;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        .topic {
+            text-align: center;
+            font-size: x-large;
+            border-style: none;
+            font-weight: bold;
+            margin: 0.5em 1em;
+        }
+
+        .topic rt {
+            font-size: medium;
+            margin-bottom: 2px;
+        }
+
+        .topic span {
+            font-size: large
+        }
+    </style>
+
+    <p class="example"><ruby>１<rt>ひと</rt>つ</ruby></p>
+    <p class="example"><ruby>２<rt>ふた</rt>つ</ruby></p>
+    <p class="example"><ruby>３<rt>みっ</rt>つ</ruby></p>
+    <p class="example"><ruby>４<rt>よっ</rt>つ</ruby></p>
+    <p class="example"><ruby>５<rt>いつ</rt>つ</ruby></p>
+    <p class="example"><ruby>６<rt>むっ</rt>つ</ruby></p>
+    <p class="example"><ruby>７<rt>なな</rt>つ</ruby></p>
+    <p class="example"><ruby>８<rt>やっ</rt>つ</ruby></p>
+    <p class="example"><ruby>９<rt>ここの</rt>つ</ruby></p>
+    <p class="example"><ruby>１０<rt>とお</rt></ruby></p>
+    
+    <table>
+        <th>
+            <td>k-</td>
+            <td>s/sh-</td>
+            <td>t/ch-</td>
+            <td>h/f-</td>
+            <td>w-</td>
+        </th>
+        <tr>
+            <td class="digit"><ruby>1<rt>いち</rt></ruby></td>
+            <td>いっ</td>
+            <td>いっ</td>
+            <td>いっ</td>
+            <td>いっ</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>3<rt>さん</rt></ruby></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>さんb</td>
+            <td class="blue">(さんb)</td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>4<rt>よん</rt></ruby></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="blue">(よんb)</td>
+            <td class="blue">(よw／よんb)</td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>6<rt>ろく</rt></ruby></td>
+            <td>ろっ</td>
+            <td></td>
+            <td></td>
+            <td>ろっp</td>
+            <td class="blue">(ろっp)</td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>8<rt>はち</rt></ruby></td>
+            <td class="blue">(はっ)</td>
+            <td class="blue">(はっ)</td>
+            <td class="blue">(はっ)</td>
+            <td class="blue">(はっp)</td>
+            <td class="blue">(はっp)</td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>10<rt>じゅう</rt></ruby></td>
+            <td>じゅっ／じっ</td>
+            <td>じゅっ／じっ</td>
+            <td>じゅっ／じっ</td>
+            <td>じゅっp／じっp</td>
+            <td class="blue">(じゅっ／じっ)</td>
+        </tr>
+        <tr>
+            <td class="digit"><ruby>何<rt>なん</rt></ruby></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>なんb／なんp</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <p>Las pronunciaciones de <ruby>2<rt style="font-size: small">に</rt></ruby>, <ruby>5<rt style="font-size: small">ご</rt></ruby>, <ruby>7<rt style="font-size: small">なな</rt></ruby> y <ruby>9<rt style="font-size: small">きゅう</rt></ruby> no cambian con ningún contador.</p>
+    
+    <p>Las pronunciaciones entre paréntesis y en azul indican que, dependiendo del contador, aplica la pronuncación natural, la pronuncación irregular mostrada, o ambas.</p>
+    
+    <p>Ambas pronunciaciones de 10 son aceptables, sin embargo, じゅっ es más común.</p>
+    
+    <p>Para contadores con h-, aplica なんb; para contadores con f-, aplica なんp.</p>
+    
+    <p>Aquellos contadores cuya primera consonante no aparece en esta tabla no sufren de pronunciaciones irregulares.</p>
+    
+    <br>
+
+    <h1>
+        <ruby>数<rt>かぞ</rt></ruby>え<ruby>方<rt>かた</rt></ruby>
+        <br>
+        Contadores
+    </h1>
+
+    <p>A continuación se muestra el conteo del 1 al 20 para un contador de cada columna, a manera de ilustrar su uso.</p>
+
+    <h2>
+        <ruby>個<rt>こ</rt></ruby>
+    </h2>
+
+    <p>Objetos pequeños y generalmente redondos. También funciona como un contador genérico, sustituyendo a つ a partir del 11.</p>
+
+    <div class="example-container">
+        <p class="example">
+            <span><ruby>１個<rt>いっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２個<rt>にこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>３個<rt>さんこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>４個<rt>よんこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>５個<rt>ごこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>６個<rt>ろっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>７個<rt>ななこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>８個<rt>はっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>９個<rt>きゅうこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１０個<rt>じゅっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１１個<rt>じゅういっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１２個<rt>じゅうにこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１３個<rt>じゅうさんこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１４個<rt>じゅうよんこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１５個<rt>じゅうごこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１６個<rt>じゅうろっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１７個<rt>じゅうななこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１８個<rt>じゅうはっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１９個<rt>じゅうきゅうこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２０個<rt>にじゅっこ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>何個<rt>なんこ</rt></ruby></span>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2>
+        <ruby>冊<rt>さつ</rt></ruby>
+    </h2>
+
+    <p>Libros, revistas y otras compilaciones impresas.</p>
+
+    <div class="example-container">
+        <p class="example">
+            <span><ruby>１冊<rt>いっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２冊<rt>にさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>３冊<rt>さんさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>４冊<rt>よんさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>５冊<rt>ごさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>６冊<rt>ろくさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>７冊<rt>ななさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>８冊<rt>はっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>９冊<rt>きゅうさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１０冊<rt>じゅうっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１１冊<rt>じゅういっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１２冊<rt>じゅうにさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１３冊<rt>じゅうさんさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１４冊<rt>じゅうよんさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１５冊<rt>じゅうごさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１６冊<rt>じゅうろくさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１７冊<rt>じゅうななさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１８冊<rt>じゅうはっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１９冊<rt>じゅうきゅうさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２０冊<rt>にじゅっさつ</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>何冊<rt>なんさつ</rt></ruby></span>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2><ruby>頭<rt>とう</rt></ruby></h2>
+
+    <p>Animales grandes.</p>
+
+    <div class="example-container">
+        <p class="example">
+            <span><ruby>１頭<rt>いっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２頭<rt>にとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>３頭<rt>さんとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>４頭<rt>よんとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>５頭<rt>ごとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>６頭<rt>ろくとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>７頭<rt>ななとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>８頭<rt>はっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>９頭<rt>きゅうとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１０頭<rt>じゅっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１１頭<rt>じゅういっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１２頭<rt>じゅうにとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１３頭<rt>じゅうさんとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１４頭<rt>じゅうよんとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１５頭<rt>じゅうごとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１６頭<rt>じゅうろくとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１７頭<rt>じゅうななとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１８頭<rt>じゅうはっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>１９頭<rt>じゅうきゅうとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>２０頭<rt>にじゅっとう</rt></ruby></span>
+        </p>
+        <p class="example">
+            <span><ruby>何頭<rt>なんとう</rt></ruby></span>
+        </p>
+    </div>
+
+    <hr>
+
+    <h2><ruby>本<rt>ほん</rt></ruby></h2>
+
+    <p>Cosas largas y delgadas.</p>
+
+    <div class="example-container">
+        <p class="example"><span><ruby>１本<rt>いっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>２本<rt>にほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>３本<rt>さんぼん</rt></ruby></span></p>
+        <p class="example"><span><ruby>４本<rt>よんほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>５本<rt>ごほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>６本<rt>ろっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>７本<rt>ななほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>８本<rt>はっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>９本<rt>きゅうほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１０本<rt>じゅっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１１本<rt>じゅういっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１２本<rt>じゅうにほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１３本<rt>じゅうさんぼん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１４本<rt>じゅうよんほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１５本<rt>じゅうごほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１６本<rt>じゅうろっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１７本<rt>じゅうななほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１８本<rt>じゅうはっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>１９本<rt>じゅうきゅうほん</rt></ruby></span></p>
+        <p class="example"><span><ruby>２０本<rt>にじゅっぽん</rt></ruby></span></p>
+        <p class="example"><span><ruby>何本<rt>なんぼん</rt></ruby></span></p>
+    </div>
+
+    <hr>
+
+    <h2><ruby>羽<rt>わ</rt></ruby></h2>
+
+    <p>Aves.</p>
+
+    <div class="example-container">
+        <p class="example"><span><ruby>１羽<rt>いちわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>２羽<rt>にわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>３羽<rt>さんば</rt></ruby></span></p>
+        <p class="example"><span><ruby>４羽<rt>よんば</rt></ruby></span></p>
+        <p class="example"><span><ruby>５羽<rt>ごわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>６羽<rt>ろくわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>７羽<rt>ななわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>８羽<rt>はちわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>９羽<rt>きゅうわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１０羽<rt>じゅうわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１１羽<rt>じゅういちわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１２羽<rt>じゅうにわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１３羽<rt>じゅうさんば</rt></ruby></span></p>
+        <p class="example"><span><ruby>１４羽<rt>じゅうよんば</rt></ruby></span></p>
+        <p class="example"><span><ruby>１５羽<rt>じゅうごわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１６羽<rt>じゅうろくわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１７羽<rt>じゅうななわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１８羽<rt>じゅうはちわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>１９羽<rt>じゅうきゅうわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>２０羽<rt>にじゅうわ</rt></ruby></span></p>
+        <p class="example"><span><ruby>何羽<rt>なんわ</rt></ruby></span></p>
+    </div>
+
+    <hr>
+
+    <p><a href="https://en.wiktionary.org/wiki/Appendix:Japanese_counters">Lista completa de contadores.</a></p>
+    <p><a href="https://www.benricho.org/kazu/database/csv_search.cgi">Buscador de contadores.</a></p>
+</body>
