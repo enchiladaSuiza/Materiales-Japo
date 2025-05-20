@@ -1,0 +1,282 @@
+<body>
+    <style>
+        /* * {
+            font-family: sans-serif;
+        } */
+        h1, h2 {
+            text-align: center;
+        }
+
+        ruby {
+            ruby-align: center;
+        }
+
+        rt {
+            font-size: x-small;
+        }
+
+        .ascii {
+            font-family: monospace;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .flex-column {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+        }
+    </style>
+
+    <h1>
+        <ruby>道<rt>みち</rt></ruby>の<ruby>聞<rt>き</rt></ruby>き<ruby>方<rt>かた</rt></ruby>・<ruby>教<rt>おし</rt></ruby>え<ruby>方<rt>かた</rt></ruby>
+        <br>
+        Cómo pedir y dar direcciones
+    </h1>
+
+    <div class="flex">
+        <div class="flex-column">
+            <p style="text-align: center; margin: 0;">
+                まっすぐ行く
+                <br>
+                (ir recto)
+            </p>
+
+            <div class="flex" style="margin: 0;">
+                <p style="margin: 0 2em;">
+                    左に<ruby>曲<rt>ま</rt></ruby>がる
+                    <br>
+                    (girar a la izquierda)
+                </p>
+                <p class="ascii" style="margin: 0">
+                    <br>
+                    家家家 ^ 家家家
+                    <br>
+                    家家家 | 家家家
+                    <br>
+                    家家家 | 家家家
+                    <br>
+                    &lt;―――――＋―――――&gt;
+                    <br>
+                    家家家 | 家家家
+                    <br>
+                    家家家 | 家家家
+                    <br>
+                    家家家 | 家家家
+                </p>
+                <p style="margin: 0 2em;">
+                    右に<ruby>曲<rt>ま</rt></ruby>がる
+                    <br>
+                    (girar a la derecha)
+                </p>
+            </div>
+        </div>
+
+        <div class="flex-column">
+            <p class="ascii">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;^
+                <br>
+                ―――――|―――――
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                <br>
+                ―――――|―――――
+                <br>
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| -->
+            </p>
+            
+            <p style="text-align: center;">
+                <ruby>道<rt>みち</rt></ruby>を<ruby>渡<rt>わた</rt></ruby>る
+                <br>
+                (cruzar la calle)
+            </p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="flex">
+        <p style="width: 25%">
+            二つ目の<ruby>角<rt>かど</rt></ruby>を右に<ruby>曲<rt>ま</rt></ruby>がる
+            <br>
+            (en la segunda esquina dar vuelta a la izquierda)
+        </p>
+
+        <p class="ascii">
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            &lt;――――――¬
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            　　　&nbsp;&nbsp;|
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+        </p>
+
+        <p>&nbsp;&nbsp;&nbsp;</p>
+        
+        <p class="ascii">
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            　　　●〇〇
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家
+            <br>
+            　　　●〇〇 ----&gt;
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+            家家家&nbsp;&nbsp;|&nbsp;&nbsp;家家家
+            <br>
+        </p>
+
+        <p style="width: 25%;">
+            一つ目の<ruby>信号<rt>しんごう</rt></ruby>を右に<ruby>曲<rt>ま</rt></ruby>がる
+            <br>
+            (dar vuelta a la derecha en el primer semáforo)
+        </p>
+    </div>
+
+    <br>
+
+    <div class="flex">
+        <div class="flex">
+            <p>
+                <ruby>道<rt>みち</rt></ruby>の<ruby>左側<rt>ひだりがわ</rt></ruby>
+                <br>
+                (lado izquierdo de la calle)
+            </p>
+            <p class="ascii" style="margin: 1.5em;">
+                | 　 |
+                <br>
+                | 　 |
+                <br>
+                | 　 |
+                <br>
+                | 　 |
+                <br>
+                | 人 |
+            </p>
+            <p>
+                <ruby>道<rt>みち</rt></ruby>の<ruby>右側<rt>みぎがわ</rt></ruby>
+                <br>
+                (lado derecho de la calle)
+            </p>
+        </div>
+
+        <div class="flex-column">
+            <p style="text-align: center;">
+                <ruby>北<rt>きた</rt></ruby>
+                <br>
+                (norte)
+            </p>
+            <div class="flex">
+                <p style="text-align: center;">
+                    <ruby>西<rt>にし</rt></ruby>
+                    <br>
+                    (oeste)
+                </p>
+                <p class="ascii" style="margin: 0 1em;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>
+                    ―――――――+―――――――
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                </p>
+                <p style="text-align: center;">
+                    <ruby>東<rt>ひがし</rt></ruby>
+                    <br>
+                    (este)
+                </p>
+            </div>
+
+            <p style="text-align: center;">
+                <ruby>南<rt>みなみ</rt></ruby>
+                <br>
+                (sur)
+            </p>
+        </div>
+
+        
+    </div>
+
+    <br>
+
+    <div class="flex">
+        <div style="width: 50%">
+            <p>A: すみません。<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>はどこですか。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Disculpe. ¿Dónde se encuentra la oficina postal?</p>
+            <p>B: まっすぐ行って、三つ目の<ruby>角<rt>かど</rt></ruby>を右に<ruby>曲<rt>ま</rt></ruby>がってくさい。<ruby>郵便局<rt>ゆうびんきょく</rt></ruby>は<ruby>右側<rt>みぎがわ</rt></ruby>にありますよ。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Siga recto y de vuelta en la tercera esquina. La oficina postal está del lado derecho.</p>
+            <p>A: どうもありがとうございます。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Muchas gracias.</p>
+        </div>
+
+        <p class="ascii">
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家　<b>郵便局</b>　家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+        
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+        
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+            家家家&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;家家家家家家家家家家
+            <br>
+        </p>
+    </div>
+
+    <hr>
+
+    <p style="font-style: italic; font-size: smaller;">Genki I, Lección 6</p>
+</body>
