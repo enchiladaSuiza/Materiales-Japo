@@ -12,6 +12,10 @@
             font-size: x-small;
         }
 
+        .image {
+            width: 400px;
+        }
+
         .flex {
             display: flex;
             justify-content: space-around;
@@ -24,28 +28,127 @@
             justify-content: end;
             align-items: center;
         }
+
+        .text-center {
+            text-align: center
+        }
     </style>
 
-   Los números de teléfono en Japón consisten de 9 a 10 dígitos.
+    <h1>日本の電話番号</h1>
+    
+    <p>El código de país de Japón es +81, y es requerido ingresarlo al principio del número de teléfono al que se quiere marcar si la llamada se hace desde el extranjero.</p>
 
-   El código de país de Japón es +81, y es requerido ingresarlo al principio del número de teléfono al que se quiere marcar si la llamada se hace desde el extranjero.
+    <p>Después viene el número de teléfono en sí. Los números de teléfono en Japón consisten de 10 dígitos.</p>
 
-   Números de teléfono fijos:
+    <p>Los primeros dos dígitos corresponden al código de área, que varía por región.</p>
 
-   Los primeros dos dígitos corresponden el código de área, que varía por región.
+    <p>Algunos códigos de área son:</p>
 
-   03 - Tokyo
-   06 - Osaka
-   11 - Sapporo
-   26 - Nagano
-   43 - Chiba
-   75 - Kyoto
-   92 - Fukuoka
-   ...
+    <ul>
+        <li>03 - Tokio</li>
+        <li>06 - Osaka</li>
+        <li>11 - Sapporo</li>
+        <li>26 - Nagano</li>
+        <li>43 - Chiba</li>
+        <li>75 - Kioto</li>
+        <li>92 - Fukuoka</li>
+        <li>...</li>
+    </ul>
 
-   Los siguientes dígitos corresponden al número de teléfono fijo.
+    <p>Los siguientes 8 dígitos corresponden al número de teléfono fijo, y son únicos.</p>
 
-   Números de celular:
+    <p>Un número completo puede verse así:</p>
 
-   
+    <p class="text-center">03-1234-5678</p>
+    <p>Para leerlo en japonés, únicamente se recitan los números uno por uno. El guión (-) se lee の</p>
+    <p class="text-center">れい　さん　の　いち　に　さん　よん　の　ご　ろく　なな　はち</p>
+
+    <p>Más ejemplos:</p>
+
+    <div class="flex">
+        <div class="flex-column">
+            <p>11-2345-2345</p>
+            <p>43-4321-4321</p>
+            <p>75-9876-5432</p>
+        </div>
+        <div class="flex-column">
+            <p>いち いち の に さん よん ご の に さん よん ご</p>
+            <p>よん さん の よん さん に いち の よん さん に いち</p>
+            <p>なな ご の きゅう はち なな ろく の ご よん さん に</p>
+        </div>
+    </div>
+
+    <p></p>
+
+    <p>Estos son algunos números de emergencia en Japón:</p>
+
+    <div class="flex">
+        <div class="flex-column">
+            <p>Ambulancia y bomberos</p>
+            <p>Policía</p>
+            <p>Información de desastres</p>
+            <p>Guardia costera</p>
+        </div>
+
+        <div class="flex-column">
+            <p>119</p>
+            <p>110</p>
+            <p>171</p>
+            <p>118</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <h1>日本の住所</h1>
+
+    <p>Las direcciones de casa en Japón siguen generalmente esta estructura:</p>
+
+    <ul>
+        <li>Símbolo postal 〒 (郵便マーク), seguido por el código postal</li>
+        <li>Nombre de la prefectura o metrópolis (都, 県 o 府)</li>
+        <li>(Si aplica) Nombre de la ciudad o pueblo (市 o 町)</li>
+        <li>Nombre del distrito (区)</li>
+        <li>Nombre de la subárea o barrio</li>
+        <li>Número de zona (丁目)</li>
+        <li>Número de bloque (番地)</li>
+        <li>Número de edificio (号)</li>
+    </ul>
+
+    <p>Por ejemplo:</p>
+    <p class="text-center">〒170-3293</p>
+    <p class="text-center"><ruby>東京都<rt>とうきょうと</rt></ruby> <ruby>中央区<rt>ちゅうおうく</rt></ruby> <ruby>銀座<rt>ぎんざ</rt></ruby> <ruby>５丁目<rt>ごちょうめ</rt></ruby> <ruby>２番地<rt>にばんち</rt></ruby> <ruby>１号<rt>いちごう</rt></ruby></p>
+
+    <p>Se entiende como:</p>
+    <p class="text-center">C.P. 170-3293</p>
+    <p class="text-center">Metrópolis de Tokio, Distrito de Chūō, Ginza, 5ta zona, 2do bloque, Edificio #1</p>
+
+    <p>En la mayor parte de Japón las calles no tienen nombre, ya que originalmente la división se hizo por pequeños distritos o zonas (丁目), que se subdividieron en bloques (番地) y las casas y edificios fueron numerados según el orden en que fueron construidos (号). Esta información se puede encontrar en placas colocadas en cada distrito.</p>
+
+    <div class="flex"><img class="image" src="https://upload.wikimedia.org/wikipedia/en/0/00/Kamimeguro-address.jpg" alt=""></div>
+    <p class="text-center">Kamimeguro, 2da zona, 21er bloque, Edificio #9</p>
+
+    <p>Para simplificar la dirección, 丁目 y 番地 se suelen abreviar a guiones y 号 desaparece.</p>
+
+    <p class="text-center">〒222-0033</p>
+    <p class="text-center"><ruby>神奈川県<rt>かながわけん</rt></ruby> <ruby>横浜市<rt>よこはまし</rt></ruby> <ruby>港北区<rt>こうほくく</rt></ruby> <ruby>新横浜<rt>しんよこはま</rt></ruby> 2-14-21</p>
+    <p class="text-center">C.P. 222-0033</p>
+    <p class="text-center">Prefectura de Kanagawa, Ciudad de Yokohama, Distrito de Kōhoku, Shinyokohama, 2da zona, 14to bloque, Edificio #21</p>
+
+    <br>
+
+    <p class="text-center">〒543-0002</p>
+    <p class="text-center"><ruby>大阪府<rt>おおさかふ</rt></ruby> <ruby>大阪市<rt>おおさかし</rt></ruby> <ruby>天王寺区<rt>てんのうじく</rt></ruby> <ruby>上汐<rt>うえしお</rt></ruby> 3-8-24</p>
+    <p class="text-center">C.P. 543-0002</p>
+    <p class="text-center">Prefectura urbana de Osaka, Ciudad de Osaka, Distrito de Tennōji, Ueshio, 3ra zona, 8vo bloque, Edificio #24</p>
+
+    <hr>
+
+    <h2>Referencias/Más información</h2>
+    <p><a href="https://www.mobal.com/blog/living-in-japan/japan-phone-number/">https://www.mobal.com/blog/living-in-japan/japan-phone-number/</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Telephone_numbers_in_Japan">https://en.wikipedia.org/wiki/Telephone_numbers_in_Japan</a></p>
+    <p><a href="https://japonpedia.com/direcciones-calles-de-japon/">https://japonpedia.com/direcciones-calles-de-japon/</a></p>
+    <p><a href="https://www.japan-guide.com/e/e2224.html">https://www.japan-guide.com/e/e2224.html</a></p>
+    <p><a href="https://www.realestate-tokyo.com/living-in-tokyo/japan-info/japanese-address/">https://www.realestate-tokyo.com/living-in-tokyo/japan-info/japanese-address/</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Japanese_addressing_system">https://en.wikipedia.org/wiki/Japanese_addressing_system</a></p>
 </body>
